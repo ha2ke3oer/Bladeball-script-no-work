@@ -1,5 +1,5 @@
 game:GetService("UserInputService").InputBegan:Connect(function(input)
-    if input.KeyCode == Enum.KeyCode.LeftControl then
+    if input.KeyCode == Enum.KeyCode.RightControl then
         if game:GetService("CoreGui"):FindFirstChild("No Hub| "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name) then
             game:GetService("CoreGui"):FindFirstChild("No Hub | "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name).Enabled = not game:GetService("CoreGui"):FindFirstChild("Muimi Hub | "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name).Enabled
         end
